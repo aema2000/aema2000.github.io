@@ -122,7 +122,126 @@ checkbox
 }
 .type {
     display: inline-block;
-    margin-right: 15px;
+}
+/*fire*/
+.checkbox-fire {
+    cursor: pointer;
+}
+.chectext-fire {
+    align-items: center;
+    display: flex;
+}
+.checkbox-fire input {
+    display: none;
+}
+.checkbox-fire input + .chectext-fire::before {
+    background-image: url(../img/無題28_20240501133630.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 100px;
+    position: relative;
+    width: 100px;
+}
+.checkbox-fire input:checked + .chectext-fire::before {
+    background-image: url(../img/無題28_20240501134229.PNG);
+}
+/*water*/
+.checkbox-water {
+    cursor: pointer;
+}
+.chectext-water {
+    align-items: center;
+    display: flex;
+}
+.checkbox-water input {
+    display: none;
+}
+.checkbox-water input + .chectext-water::before {
+    background-image: url(../img/無題28_20240501133928.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 100px;
+    position: relative;
+    width: 100px;
+}
+.checkbox-water input:checked + .chectext-water::before {
+    background-image: url(../img/無題28_20240501134256.PNG);
+}
+/*wind*/
+.checkbox-wind {
+    cursor: pointer;
+}
+.chectext-wind {
+    align-items: center;
+    display: flex;
+}
+.checkbox-wind input {
+    display: none;
+}
+.checkbox-wind input + .chectext-wind::before {
+    background-image: url(../img/無題28_20240501133535.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 100px;
+    position: relative;
+    width: 100px;
+}
+.checkbox-wind input:checked + .chectext-wind::before {
+    background-image: url(../img/無題28_20240501134206.PNG);
+}
+/*right*/
+.checkbox-right {
+    cursor: pointer;
+}
+.chectext-right {
+    align-items: center;
+    display: flex;
+}
+.checkbox-right input {
+    display: none;
+}
+.checkbox-right input + .chectext-right::before {
+    background-image: url(../img/無題28_20240501133725.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 100px;
+    position: relative;
+    width: 100px;
+}
+.checkbox-right input:checked + .chectext-right::before {
+    background-image: url(../img/無題28_20240501134309.PNG);
+}
+/*dark*/
+.checkbox-dark {
+    cursor: pointer;
+}
+.chectext-dark {
+    align-items: center;
+    display: flex;
+}
+.checkbox-dark input {
+    display: none;
+}
+.checkbox-dark input + .chectext-dark::before {
+    background-image: url(../img/無題28_20240501134032.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 100px;
+    position: relative;
+    width: 100px;
+}
+.checkbox-dark input:checked + .chectext-dark::before {
+    background-image: url(../img/無題28_20240501134116.PNG);
 }
 
 /*
