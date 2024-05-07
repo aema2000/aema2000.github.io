@@ -47,6 +47,13 @@ grid
     height: 700px;
     margin: 0 20px;
 }
+@media (max-width: 480px){
+    .grid-col-3 > .grid-item {
+        margin: 0 5%;
+        padding: 0;
+        width: 90%;
+    }
+}
 .grid-col-4 > .grid-item {
     width: 25%;
     margin: 0 20px 20px;
@@ -401,7 +408,16 @@ youtube-X-link
     }
 }
 .youtube {
-    text-align: center;
+    margin: 0 auto 30px;
+    width: 950px;
+    height: 534px;
+}
+@media (max-width: 480px){
+    .youtube {
+        margin: 0 auto 20px;
+        width: 400px;
+        height: 224px;
+    }
 }
 .youtube-title {
     margin-left: 5%;
