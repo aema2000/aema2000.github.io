@@ -27,8 +27,14 @@ grid
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+@media (max-width: 480px){
+    .grid {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        }
 }
 .grid-item {
     list-style: none;
@@ -44,6 +50,13 @@ grid
 .grid-col-4 > .grid-item {
     width: 25%;
     margin: 0 20px 20px;
+}
+@media (max-width: 480px){
+    .grid-col-4 > .grid-item {
+        margin: 0;
+        padding: 0;
+        width: 50%;
+    }
 }
 .grid-col-5 > .grid-item {
     width: 20%;
@@ -155,6 +168,23 @@ checkbox
     background-image: url(../img/無題28_20240501133630.PNG);
     background-size: cover;
 }
+@media (max-width: 480px){
+    .hidden-checkbox-fire {
+        display: none;
+    }
+    .checkbox-fire {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+    .checkbox-image-fire {
+        display: block;
+        width: 40px;
+        height: 50px;
+        background-image: url(../img/無題28_20240501133630.PNG);
+        background-size: cover;
+    }
+}
 .hidden-checkbox-fire:checked + .checkbox-image-fire {
     background-image: url(../img/無題28_20240501134229.PNG);
 }
@@ -174,9 +204,27 @@ checkbox
     background-image: url(../img/無題28_20240501133928.PNG);
     background-size: cover;
 }
+@media (max-width: 480px){
+    .hidden-checkbox-water {
+        display: none;
+    }
+    .checkbox-water {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+    .checkbox-image-water {
+        display: block;
+        width: 40px;
+        height: 50px;
+        background-image: url(../img/無題28_20240501133928.PNG);
+        background-size: cover;
+    }
+}
 .hidden-checkbox-water:checked + .checkbox-image-water {
     background-image: url(../img/無題28_20240501134256.PNG);
 }
+
 /*wind*/
 .hidden-checkbox-wind {
     display: none;
@@ -193,9 +241,27 @@ checkbox
     background-image: url(../img/無題28_20240501133535.PNG);
     background-size: cover;
 }
+@media (max-width: 480px){
+    .hidden-checkbox-wind {
+        display: none;
+    }
+    .checkbox-wind {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+    .checkbox-image-wind {
+        display: block;
+        width: 40px;
+        height: 50px;
+        background-image: url(../img/無題28_20240501133535.PNG);
+        background-size: cover;
+    }
+}
 .hidden-checkbox-wind:checked + .checkbox-image-wind {
     background-image: url(../img/無題28_20240501134206.PNG);
 }
+
 /*right*/
 .hidden-checkbox-right {
     display: none;
@@ -212,9 +278,27 @@ checkbox
     background-image: url(../img/無題28_20240501133725.PNG);
     background-size: cover;
 }
+@media (max-width: 480px){
+    .hidden-checkbox-right {
+        display: none;
+    }
+    .checkbox-right {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+    .checkbox-image-right {
+        display: block;
+        width: 40px;
+        height: 50px;
+        background-image: url(../img/無題28_20240501133725.PNG);
+        background-size: cover;
+    }
+}
 .hidden-checkbox-right:checked + .checkbox-image-right {
     background-image: url(../img/無題28_20240501134309.PNG);
 }
+
 /*dark*/
 .hidden-checkbox-dark {
     display: none;
@@ -230,6 +314,23 @@ checkbox
     height: 100px;
     background-image: url(../img/無題28_20240501134032.PNG);
     background-size: cover;
+}
+@media (max-width: 480px){
+    .hidden-checkbox-dark {
+        display: none;
+    }
+    .checkbox-dark {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+    .checkbox-image-dark {
+        display: block;
+        width: 40px;
+        height: 50px;
+        background-image: url(../img/無題28_20240501134032.PNG);
+        background-size: cover;
+    }
 }
 .hidden-checkbox-dark:checked + .checkbox-image-dark {
     background-image: url(../img/無題28_20240501134116.PNG);
