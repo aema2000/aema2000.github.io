@@ -58,6 +58,7 @@ grid
         margin: 0 5%;
         padding: 0;
         width: 90%;
+        height: 800px;
     }
 }
 .grid-col-4 > .grid-item {
@@ -524,7 +525,7 @@ toppage-link
 */
 .toppage-box {
     text-align: center;
-    margin: 25px 0;
+    margin: 15px 0 25px;
 }
 .toppage-link {
     display: inline-block;
@@ -552,7 +553,14 @@ footer
     font-size: 15px;
     line-height: 50px;
 }
+@media (max-width: 480px){
+    .footer-copy {
+        font-size: 12px;
+        line-height: 50px;
+    }
+}
 footer a {
     color: #fff;
     margin-left: 20px;
 }
+
