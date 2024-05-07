@@ -162,6 +162,9 @@ sub-title
 .how-to {
     margin: 0;
 }
+.how-image {
+    margin: 0 8px;
+}
 
 /*
 topp-image
@@ -183,6 +186,20 @@ cara-name
     font-size: 20px;
     text-align: center;
     margin: 10px 0;
+}
+@media (max-width: 480px){
+    .cara-name {
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .drop {
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        margin: 10px 0;
+    }
 }
 .drop-list {
     font-weight: bold;
