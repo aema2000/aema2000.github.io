@@ -23,6 +23,12 @@ img {
 /*
 grid
 */
+#monster {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
 .grid {
     margin: 0;
     padding: 0;
@@ -61,13 +67,28 @@ grid
 @media (max-width: 480px){
     .grid-col-4 > .grid-item {
         margin: 0;
-        padding: 0;
+        padding: 0 5px 20px;
         width: 50%;
     }
 }
+
 .grid-col-5 > .grid-item {
     width: 20%;
-    margin: 0 15px;
+    margin: 0;
+    padding: 0 10px;
+}
+@media (max-width: 480px){
+    .grid-col-5 > .grid-item {
+        width: 33.3%;
+        margin: 0;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px){
+    .response {
+        display: none;
+    }
 }
 
 /*
@@ -78,6 +99,13 @@ table, tr, th, td {
 }
 th {
     text-align: center;
+}
+@media (max-width: 480px){
+    table, tr, th, td {
+        font-size: 12px;
+        font-weight: normal;
+        margin: 0 auto;
+    }
 }
 
 /*
@@ -107,6 +135,33 @@ section
         margin: 0;
     }
 }
+
+/*
+sub-title
+*/
+.sub-title {
+    margin: 25px 0 20px 20px;
+}
+.sub-description {
+    margin: 0 0 30px 25px;
+    line-height: 2;
+}
+@media (max-width: 480px){
+    .sub-title {
+        margin: 15px 40px 0;
+        font-size: 18px;
+    }
+    .sub-description {
+        margin: 0 0 15px 25px;
+        padding: 0 25px;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+}
+.how-to {
+    margin: 0;
+}
+
 /*
 topp-image
 */
@@ -130,14 +185,30 @@ cara-name
 }
 .drop-list {
     font-weight: bold;
-
+}
+@media (max-width: 480px){
+    .drop-list {
+        font-weight: normal;
+        font-size: 12px;
+    }
 }
 .cara-name-list {
     font-weight: bold;
     font-size: 15px;
+    line-height: 2;
     text-align: center;
     margin: 0;
 }
+@media (max-width: 480px){
+    .cara-name-list {
+        font-weight: bold;
+        font-size: 10px;
+        text-align: center;
+        margin: 0;
+        padding: 3px 0;
+    }
+}
+
 
 /*
 search
@@ -349,6 +420,11 @@ monster-list
 .monster-list {
     margin: 0 15%;
 }
+@media (max-width: 480px){
+    .monster-list {
+        margin: 0 10%;
+    }
+}
 
 ul a {
     text-decoration: none;
@@ -360,16 +436,6 @@ ul a {
 .example li {
     display: inline;
     margin-right: 15px;
-}
-/*
-sub-title
-*/
-.sub-title {
-    margin: 25px 0 20px 5%;
-}
-.sub-description {
-    margin: 0 0 30px 5%;
-    line-height: 2;
 }
 
 /*
@@ -419,23 +485,6 @@ youtube-X-link
         height: 224px;
     }
 }
-.youtube-title {
-    margin-left: 5%;
-}
-.youtube-text{
-    margin: 0 0 30px 5%;
-    line-height: 1;
-    font-size: 15px;
-}
-
-.X-title {
-    margin-left: 5%;
-}
-.X-text {
-    margin-left: 5%;
-    line-height: 1;
-    font-size: 15px;
-}
 .X-headline {
     color: white;
     background-color: #333;
@@ -464,6 +513,7 @@ youtube-X-link
     margin: 0 5%;
 }
 .post-description {
+    margin-top: 0;
     font-weight: bold;
     font-size: 20px;
     text-align: center;

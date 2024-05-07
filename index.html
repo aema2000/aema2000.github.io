@@ -28,13 +28,14 @@
     <section class="section">
         <h1 class="section-headline">How to use</h1>
         
-        <figure>
-            <h2>モンスターの詳細情報</h2>
-            <p> 
-                モンスターのアイコン画像をクリックするとレベル５０でのステータス、入手方法が<br/>
-                ポップアップで表示されます。<br/>
-                ＊今後それぞれのキャラクターにコメント機能を追加する予定です。<br/>
-            </p>
+        <figure class="how-to">
+            <h2 class="sub-title">モンスターの詳細情報</h2>
+            <div class="sub-description"> 
+                <p>
+                    モンスターのアイコン画像をクリックするとレベル５０でのステータス、入手方法がポップアップで表示されます。<br/>
+                    ＊今後それぞれのキャラクターにコメント機能を追加する予定です。<br/>
+                </p>
+            </div>
         </figure>
 
         <ul class="grid grid-col-4">
@@ -49,7 +50,7 @@
             <li class="grid-item">
                 <div>
                     <p class="cara-name">ステータス</p>
-                    <table width="100%">
+                    <table width="90%">
                         <tr>
                             <th>Lv</th>
                             <th>50/50</th>
@@ -183,8 +184,8 @@
 
     <section class="monster-list">
 
-        <div class="monster-fire">
-            <ul class="grid grid-col-5">
+        <!--monster-fire-->
+            <ul class="grid grid-col-5" id="monster">
                 <li class="grid-item">
                     <div>
                         <img src="assets\img\KGGQ6737.JPEG">
@@ -215,9 +216,6 @@
                         <p class="cara-name-list">R：かにおとこ 火</p>
                     </div>
                 </li>
-            </ul>
-    
-            <ul class="grid grid-col-5">
                 <li class="grid-item">
                     <div>
                         <img src="assets\img\RBTY9867.JPEG">
@@ -248,9 +246,6 @@
                         <p class="cara-name-list">R：ミミック 火</p>
                     </div>
                 </li>
-            </ul>
-    
-            <ul class="grid grid-col-5">
                 <li class="grid-item">
                     <div>
                         <img src="assets\img\OTEF1958.JPEG">
@@ -281,11 +276,7 @@
                         <p class="cara-name-list">R：ホネ 火</p>
                     </div>
                 </li>
-            </ul>
-        </div>
-
-        <div class="monster-water">
-            <ul class="grid grid-col-5">
+       <!--monster-water-->
                 <li class="grid-item">
                     <div>
                         <img src="assets\img\HAAN0819.JPEG">
@@ -316,9 +307,6 @@
                         <p class="cara-name-list">R：かにおとこ 水</p>
                     </div>
                 </li>
-            </ul>
-    
-            <ul class="grid grid-col-5">
                 <li class="grid-item">
                     <div>
                         <img src="assets\img\GHTG4924.JPEG">
@@ -349,9 +337,6 @@
                         <p class="cara-name-list">R：ミミック 水</p>
                     </div>
                 </li>
-            </ul>
-    
-            <ul class="grid grid-col-5">
                 <li class="grid-item">
                     <div>
                         <img src="assets\img\LJOV2486.JPEG">
@@ -382,11 +367,7 @@
                         <p class="cara-name-list">R：ホネ 水</p>
                     </div>
                 </li>
-            </ul>
-        </div>
-
-        <div class="monster-wind">
-            <ul class="grid grid-col-5">
+       <!--monster-wind-->
                 <li class="grid-item">
                     <div>
                         <img src="assets\img\FLTC5297.JPEG">
@@ -417,9 +398,6 @@
                         <p class="cara-name-list">R：かにおとこ 風</p>
                     </div>
                 </li>
-            </ul>
-    
-            <ul class="grid grid-col-5">
                 <li class="grid-item">
                     <div>
                         <img src="assets\img\VKTP4537.JPEG">
@@ -450,9 +428,6 @@
                         <p class="cara-name-list">R：ミミック 風</p>
                     </div>
                 </li>
-            </ul>
-    
-            <ul class="grid grid-col-5">
                 <li class="grid-item">
                     <div>
                         <img src="assets\img\MWTN0115.JPEG">
@@ -501,24 +476,28 @@
     <section>
 
         <h1 class="section-headline">Addition</h1>
-
         <h2 class="sub-title">実装予定の機能・改善点</h2>
 
-        <ul class="sub-description">
-            <li style="font-size: 20px;">モンスターの種類の追加</li>
-            <li style="font-size: 20px;">コメント機能の追加</li>
-            <li style="font-size: 20px;">掲示板機能の追加</li>
-        </ul>
+        <div class="sub-description">
+            <ul>
+                <li>モンスターの種類の追加</li>
+                <li>コメント機能の追加</li>
+                <li>掲示板機能の追加</li>
+            </ul>
+        </div>
+
     </section>
 
     <section>
 
         <h1 class="youtube-headline">YOUTUBE</h1>
-        <h2 class="youtube-title">公式ＹＯＵＴＵＢＥアカウントの紹介</h2>
+        <h2 class="sub-title">公式ＹＯＵＴＵＢＥアカウントの紹介</h2>
 
-        <div class="youtube-text">
-            <p>まものダンジョン＋に登場するトマトマンがＹＯＵＴＵＢＥにて最新情報を発信しています！</p>
-            <p>更新頻度はかなり悪いですが周年イベントなどの大型イベントは力を入れた動画がアップロードされます！！</p>
+        <div class="sub-description">
+            <p>
+                まものダンジョン＋に登場するトマトマンがＹＯＵＴＵＢＥにて最新情報を発信しています！<br/>
+                更新頻度はかなり悪いですが周年イベントなどの大型イベントは力を入れた動画がアップロードされます！！
+            </p>
         </div>
 
         <div class="youtube">
@@ -530,11 +509,10 @@
     <section>
 
         <h1 class="X-headline">X</h1>
-        <h2 class="X-title">公式Ｘアカウントの紹介</h2>
+        <h2 class="sub-title">公式Ｘアカウントの紹介</h2>
 
-        <div class="X-text">
-            <p>まものダンジョン＋に登場するトマトマンがＸにて最新情報を発信しています！</p>
-            <p>公式Ｘアカウントをフォローしてイベント情報をチェックしましょう！！</p>
+        <div class="sub-description">
+            <p>まものダンジョン＋に登場するトマトマンがＸにて最新情報を発信しています！公式Ｘアカウントをフォローしてイベント情報をチェックしましょう！！</p>
         </div>
 
         <div class="X-post">
