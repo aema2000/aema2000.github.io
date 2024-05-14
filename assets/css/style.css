@@ -42,6 +42,27 @@ grid
         flex-wrap: wrap;
         }
 }
+
+.grid-monster {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-monster > .grid-item {
+    list-style: none;
+    width: 20%;
+    margin: 0;
+    padding: 5px 10px
+}
+@media (max-width: 480px){
+    .grid-monster > .grid-item {
+        width: 33.3%;
+        margin: 0;
+        padding: 0 10px;
+    }
+}
+
 .grid-item {
     list-style: none;
 }
@@ -50,7 +71,6 @@ grid
 }
 .grid-col-3 > .grid-item {
     width: 33.3%;
-    height: 700px;
     margin: 0 20px;
 }
 @media (max-width: 480px){
@@ -58,14 +78,20 @@ grid
         margin: 0 5%;
         padding: 0;
         width: 90%;
-        height: 800px;
     }
 }
 .grid-col-4 > .grid-item {
     width: 25%;
     margin: 0 20px 20px;
 }
-@media (max-width: 480px){
+@media (max-width: 768px){
+    .grid-col-4 > .grid-item {
+        margin: 0;
+        padding: 0 20px 20px;
+        width: 50%;
+    }
+}
+@media (max-width: 600px){
     .grid-col-4 > .grid-item {
         margin: 0;
         padding: 0 5px 20px;
@@ -73,24 +99,17 @@ grid
     }
 }
 
-.grid-col-5 > .grid-item {
-    width: 20%;
-    margin: 0;
-    padding: 0 10px;
-}
-@media (max-width: 480px){
-    .grid-col-5 > .grid-item {
-        width: 33.3%;
-        margin: 0;
-        padding: 0 10px;
+@media (max-width: 768px){
+    .response {
+        display: none;
     }
 }
-
 @media (max-width: 480px){
     .response {
         display: none;
     }
 }
+
 
 /*
 table
@@ -190,29 +209,59 @@ cara-name
     text-align: center;
     margin: 10px 0;
 }
-@media (max-width: 480px){
+@media (max-width: 960px){
     .cara-name {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 15px;
         text-align: center;
         margin: 10px 0;
     }
     .drop {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 15px;
         text-align: center;
         margin: 10px 0;
     }
-}
-.drop-list {
-    font-weight: bold;
-}
-@media (max-width: 480px){
     .drop-list {
         font-weight: normal;
         font-size: 12px;
     }
 }
+.drop-list {
+    font-weight: bold;
+}
+@media (max-width: 768px){
+    .drop {
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .drop-list {
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+@media (max-width: 480px){
+    .cara-name {
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .drop {
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .drop-list {
+        font-weight: normal;
+        font-size: 12px;
+    }
+}
+
+
+
+
 .cara-name-list {
     font-weight: bold;
     font-size: 15px;
@@ -264,7 +313,7 @@ checkbox
     display: block;
     width: 80px;
     height: 100px;
-    background-image: url(../img/無題28_20240501133630.PNG);
+    background-image: url(../img/icon-before-fire.PNG);
     background-size: cover;
 }
 @media (max-width: 480px){
@@ -280,12 +329,12 @@ checkbox
         display: block;
         width: 40px;
         height: 50px;
-        background-image: url(../img/無題28_20240501133630.PNG);
+        background-image: url(../img/icon-before-fire.PNG);
         background-size: cover;
     }
 }
 .hidden-checkbox-fire:checked + .checkbox-image-fire {
-    background-image: url(../img/無題28_20240501134229.PNG);
+    background-image: url(../img/icon-after-fire.PNG);
 }
 /*water*/
 .hidden-checkbox-water {
@@ -300,7 +349,7 @@ checkbox
     display: block;
     width: 80px;
     height: 100px;
-    background-image: url(../img/無題28_20240501133928.PNG);
+    background-image: url(../img/icon-before-water.PNG);
     background-size: cover;
 }
 @media (max-width: 480px){
@@ -316,12 +365,12 @@ checkbox
         display: block;
         width: 40px;
         height: 50px;
-        background-image: url(../img/無題28_20240501133928.PNG);
+        background-image: url(../img/icon-before-water.PNG);
         background-size: cover;
     }
 }
 .hidden-checkbox-water:checked + .checkbox-image-water {
-    background-image: url(../img/無題28_20240501134256.PNG);
+    background-image: url(../img/icon-after-water.PNG);
 }
 
 /*wind*/
@@ -337,7 +386,7 @@ checkbox
     display: block;
     width: 80px;
     height: 100px;
-    background-image: url(../img/無題28_20240501133535.PNG);
+    background-image: url(../img/icon-before-wind.PNG);
     background-size: cover;
 }
 @media (max-width: 480px){
@@ -353,12 +402,12 @@ checkbox
         display: block;
         width: 40px;
         height: 50px;
-        background-image: url(../img/無題28_20240501133535.PNG);
+        background-image: url(../img/icon-before-wind.PNG);
         background-size: cover;
     }
 }
 .hidden-checkbox-wind:checked + .checkbox-image-wind {
-    background-image: url(../img/無題28_20240501134206.PNG);
+    background-image: url(../img/icon-after-wind.PNG);
 }
 
 /*right*/
@@ -374,7 +423,7 @@ checkbox
     display: block;
     width: 80px;
     height: 100px;
-    background-image: url(../img/無題28_20240501133725.PNG);
+    background-image: url(../img/icon-before-right.PNG);
     background-size: cover;
 }
 @media (max-width: 480px){
@@ -390,12 +439,12 @@ checkbox
         display: block;
         width: 40px;
         height: 50px;
-        background-image: url(../img/無題28_20240501133725.PNG);
+        background-image: url(../img/icon-before-right.PNG);
         background-size: cover;
     }
 }
 .hidden-checkbox-right:checked + .checkbox-image-right {
-    background-image: url(../img/無題28_20240501134309.PNG);
+    background-image: url(../img/icon-after-right.PNG);
 }
 
 /*dark*/
@@ -411,7 +460,7 @@ checkbox
     display: block;
     width: 80px;
     height: 100px;
-    background-image: url(../img/無題28_20240501134032.PNG);
+    background-image: url(../img/icon-before-dark.PNG);
     background-size: cover;
 }
 @media (max-width: 480px){
@@ -427,12 +476,12 @@ checkbox
         display: block;
         width: 40px;
         height: 50px;
-        background-image: url(../img/無題28_20240501134032.PNG);
+        background-image: url(../img/icon-before-dark.PNG);
         background-size: cover;
     }
 }
 .hidden-checkbox-dark:checked + .checkbox-image-dark {
-    background-image: url(../img/無題28_20240501134116.PNG);
+    background-image: url(../img/icon-after-dark.PNG);
 }
 
 /*
@@ -457,6 +506,27 @@ ul a {
 .example li {
     display: inline;
     margin-right: 15px;
+}
+
+/*
+pagination
+*/
+#pagination {
+    margin: 10px 0 20px;
+    text-align: center;
+}
+.pagination-button {
+    margin-right: 15px;
+    padding: 10px 20px;
+}
+@media (max-width: 480px){
+    #pagination {
+        margin: 10px 0;
+    }
+    .pagination-button {
+        margin-right: 10px;
+        padding: 0 10px;
+    }
 }
 
 /*
